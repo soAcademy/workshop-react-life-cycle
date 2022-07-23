@@ -35,18 +35,20 @@ http://localhost:3000
 
 ## How to
 
-1. At file src/App.js uncomment Mounting component (line 14).
-2. At Chrome, open JavaScript console by Command+Option+J (Mac) or Control+Shift+J (Windows).
+1. At file src/App.js uncomment **Mounting** component (line 14).
+2. At Chrome, open JavaScript console by **Command+Option+J** (Mac) or **Control+Shift+J** (Windows).
 3. From the log try to investigate the order of fucntion get called by React.
 
-4. At file src/App.js comment Mounting component (line 14), uncomment Updating component (line 15), Go back to Chrome to see the log.
+4. At file src/App.js comment **Mounting** component (line 14), uncomment **Updating** component (line 15), Go back to Chrome to see the log.
 
-5. At file src/App.js comment Updating component (line 15), uncomment Unmounting component (line 16), Go back to Chrome and try to click button to toggle the clock and see the log.
+5. At file src/App.js comment **Updating** component (line 15), uncomment **Unmounting** component (line 16), Go back to Chrome and try to click button to toggle the clock and see the log.
 
-6. At file src/App.js comment Unmounting component (line 16), uncomment CheckLifeCycle component (line 17) and try to comment - uncomment the following step and see the log
-6.1 Comment componentDidMount function at CheckLifeCycle.
-The clock is stopped, why?
-6.2 Uncomment componentDidMount function at CheckLifeCycle, Comment getDerivedStateFromProps function at CheckLifeCycleChild.
-The clock still not works, why?
-6.3 Comment componentDidMount function at CheckLifeCycle, Uncomment componentDidMount function at CheckLifeCycleChild.
-The clock is now working, why?
+6. At file src/App.js comment **Unmounting** component (line 16), uncomment **CheckLifeCycle** component (line 17) and try to comment - uncomment the following step and see the log  
+
+    6.1 Comment *componentDidMount* function at **CheckLifeCycle** component. The clock is stopped, why?  
+
+    6.2 Uncomment *componentDidMount* function at **CheckLifeCycle** component, Comment *getDerivedStateFromProps* function at **CheckLifeCycleChild** component. The clock still not works, why?  
+
+    6.3 Comment *componentDidMount* function at **CheckLifeCycle** component, Uncomment *componentDidMount* function at **CheckLifeCycleChild** component. The clock is now working, why?  
+
+    Try to play around and see the changed in log.
